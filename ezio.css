@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f2f2f2;
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #333;
+    padding: 20px 50px;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 10;
+}
+header .name a{
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header nav a{
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+nav a:hover{
+    background-color: #464646;
+    color: rgba(0, 183, 255, 0.616);
+}
+
+section{
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#myself{
+    background:url("ac.jpg") center/cover no-repeat;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+#myself h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    text-align: start;
+    color: rgb(219, 28, 28);
+}
+
+#myself p{
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: start;
+    line-height: 40px;
+    color: rgb(99, 6, 6);
+}
+
+#skills{
+        background:url("ezio.jpg") center/cover no-repeat;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+#skills h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2px;
+    text-align: start;
+    color: rgb(31, 28, 219);
+}
+
+#skills ul{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    text-align: start;
+    color: rgb(7, 3, 3);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #130202a9;
+    color: red
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
